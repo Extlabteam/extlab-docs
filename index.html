@@ -3,42 +3,101 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Welcome to ExtLab</title>
+  <title>ExtLab Extension</title>
   <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 0 20px;
-      background: #f9f9f9;
-      color: #333;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fafafa;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
     }
-    nav ul {
-      list-style: none;
-      padding-left: 0;
+    main {
+      background: white;
+      padding: 40px 30px;
+      max-width: 480px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
     }
-    nav ul li {
-      margin-bottom: 10px;
+    h1 {
+      margin: 0 0 12px 0;
+      font-weight: 700;
+      font-size: 2.4rem;
+      color: #111;
     }
-    nav ul li a {
-      color: #0366d6;
+    p.description {
+      margin: 0 0 24px 0;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #555;
+    }
+    .price {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 32px;
+      color: #111;
+    }
+    a.buy-button {
+      display: inline-block;
+      background: #4f46e5;
+      color: white;
+      font-weight: 600;
+      padding: 14px 40px;
+      border-radius: 9999px;
       text-decoration: none;
-      font-weight: bold;
+      font-size: 1.15rem;
+      transition: background 0.3s ease;
     }
-    nav ul li a:hover {
+    a.buy-button:hover {
+      background: #4338ca;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    footer a {
+      color: #4f46e5;
+      text-decoration: none;
+    }
+    footer a:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 30px 20px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      a.buy-button {
+        width: 100%;
+        padding: 14px 0;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to ExtLab Documentation</h1>
-  <p>This site contains our Terms of Service, Privacy Policy, and Refund Policy.</p>
-  <nav>
-    <ul>
-      <li><a href="terms.html">Terms of Service</a></li>
-      <li><a href="privacy.html">Privacy Policy</a></li>
-      <li><a href="refund.html">Refund Policy</a></li>
-    </ul>
-  </nav>
+  <main>
+    <h1>ExtLab Extension</h1>
+    <p class="description">ExtLab is a clean and powerful browser extension designed to help you organize your tabs and links efficiently.</p>
+    <div class="price">Price: $9.99 (one-time purchase)</div>
+    <a href="https://checkout.paddle.com/checkout/product/YOUR_PRODUCT_ID" class="buy-button" target="_blank" rel="noopener noreferrer">Buy Now</a>
+  </main>
+  <footer>
+    Questions? Contact us at <a href="mailto:extlabteam@gmail.com">extlabteam@gmail.com</a>
+  </footer>
 </body>
 </html>
