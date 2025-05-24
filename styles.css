@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #d9e4ff);
+  color: #1a202c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  min-height: 100vh;
+}
+
+header {
+  max-width: 700px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 3rem;
+  color: #4f46e5;
+  user-select: none;
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+  text-shadow: 0 2px 6px rgba(79, 70, 229, 0.3);
+}
+
+.tagline {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #5a67d8;
+  letter-spacing: 1.2px;
+  font-style: italic;
+}
+
+main {
+  max-width: 700px;
+  background: white;
+  border-radius: 20px;
+  padding: 50px 40px;
+  box-shadow: 0 20px 40px rgba(79, 70, 229, 0.15);
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #2d3748;
+  user-select: none;
+}
+
+main p {
+  margin: 0 0 35px 0;
+}
+
+.italic-muted {
+  font-style: italic;
+  color: #718096;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn {
+  background: #5a67d8;
+  color: white;
+  padding: 16px 36px;
+  font-weight: 700;
+  border-radius: 14px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0 8px 15px rgba(90, 103, 216, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: all 0.3s ease;
+  min-width: 160px;
+  user-select: none;
+}
+
+.btn:hover {
+  background: #434bbf;
+  box-shadow: 0 12px 25px rgba(67, 75, 191, 0.5);
+  transform: translateY(-4px);
+}
+
+.btn img {
+  width: 28px;
+  height: 28px;
+}
+
+footer {
+  margin-top: 80px;
+  font-size: 1rem;
+  color: #718096;
+  max-width: 700px;
+  text-align: center;
+  user-select: none;
+}
+
+footer a {
+  color: #5a67d8;
+  text-decoration: none;
+  font-weight: 600;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 540px) {
+  .buttons {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .btn {
+    min-width: 100%;
+    justify-content: center;
+  }
+}
